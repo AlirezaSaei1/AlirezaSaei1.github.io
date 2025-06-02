@@ -17,6 +17,7 @@ header {
   color: #fff;
   padding: 20px;
   text-align: center;
+  position: relative;
 }
 
 .profile-pic {
@@ -53,7 +54,6 @@ a {
   color: #007acc;
 }
 
-/* Project cards */
 .project-cards {
   display: grid;
   gap: 20px;
@@ -78,58 +78,25 @@ a {
   transform: translateY(-5px);
 }
 
-/* Toggle container */
-.toggle-container {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
+.tags {
+  margin-top: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
-
-/* Hide checkbox */
-#dark-mode-toggle {
-  display: none;
+.tags span {
+  background: #007acc;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
 }
 
-/* Toggle track */
-.toggle {
-  width: 60px;
-  height: 30px;
-  background: #333;
-  border-radius: 999px;
-  position: relative;
-  cursor: pointer;
-  transition: background 0.4s ease;
+.dark-mode .tags span {
+  background: #3399ff;
 }
-
-/* Toggle knob (circle) */
-.knob {
-  width: 24px;
-  height: 24px;
-  background: #ffcc00; /* Yellow (sun-like) */
-  border-radius: 50%;
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  transition: all 0.4s ease;
-}
-
-/* Dark mode styles */
-#dark-mode-toggle:checked + .toggle {
-  background: #888;
-}
-
-#dark-mode-toggle:checked + .toggle .knob {
-  transform: translateX(30px);
-  background: #f0f0f0;
-}
-
 
 .skills-grid {
   display: grid;
@@ -173,4 +140,50 @@ a {
 
 .stars span.filled {
   background: #ffcc00;
+}
+
+.toggle-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+#dark-mode-toggle {
+  display: none;
+}
+
+.toggle {
+  width: 60px;
+  height: 30px;
+  background: #333;
+  border-radius: 999px;
+  position: relative;
+  cursor: pointer;
+  transition: background 0.4s ease;
+}
+
+.knob {
+  width: 24px;
+  height: 24px;
+  background: #ffcc00;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: all 0.4s ease;
+}
+
+#dark-mode-toggle:checked + .toggle {
+  background: #888;
+}
+
+#dark-mode-toggle:checked + .toggle .knob {
+  transform: translateX(30px);
+  background: #f0f0f0;
 }

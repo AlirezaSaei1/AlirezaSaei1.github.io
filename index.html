@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="toggle-container">
-    <input type="checkbox" id="dark-mode-toggle" hidden />
-    <label for="dark-mode-toggle" class="toggle">
-      <div class="knob"></div>
-    </label>
-  </div>
 
   <header>
+    <div class="toggle-container">
+      <input type="checkbox" id="dark-mode-toggle" hidden />
+      <label for="dark-mode-toggle" class="toggle">
+        <div class="knob"></div>
+      </label>
+    </div>
     <img src="Media/profile.jpg" alt="Profile Picture" class="profile-pic" />
     <h1>Alireza Dastmalchi Saei</h1>
     <p>Computer Engineering Student | AI Researcher | Mentor</p>
@@ -31,28 +31,13 @@
     <section id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill">
-          <span>Python</span>
-          <div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div>
-        </div>
-        <div class="skill">
-          <span>TensorFlow</span>
-          <div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div>
-        </div>
-        <div class="skill">
-          <span>PyTorch</span>
-          <div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div>
-        </div>
-        <div class="skill">
-          <span>Java</span>
-          <div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span></div>
-        </div>
-        <div class="skill">
-          <span>C/C++</span>
-          <div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span></div>
+        <div class="skill"><span>Python</span><div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div></div>
+        <div class="skill"><span>TensorFlow</span><div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div></div>
+        <div class="skill"><span>PyTorch</span><div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div></div>
+        <div class="skill"><span>Java</span><div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span></div></div>
+        <div class="skill"><span>C/C++</span><div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span></span><span></span></div></div>
       </div>
     </section>
-
 
     <section id="projects">
       <h2>Projects</h2>
@@ -60,18 +45,22 @@
         <div class="card">
           <h3>DeepFake Detection</h3>
           <p>Comparative study using XceptionNet and CLRNet.</p>
+          <div class="tags"><span>Python</span><span>TensorFlow</span><span>CV</span></div>
         </div>
         <div class="card">
           <h3>Parallel Conjugate Gradient</h3>
           <p>MPI implementation for large-scale matrix systems.</p>
+          <div class="tags"><span>C</span><span>MPI</span><span>HPC</span></div>
         </div>
         <div class="card">
           <h3>Neural Processes for Classification</h3>
-          <p>Investigated Neural Processes (NPs) for classifying Alzheimer's disease progression on the TADPOLE dataset.</p>
+          <p>Investigated IMNP for classifying Alzheimer's disease progression on the TADPOLE dataset.</p>
+          <div class="tags"><span>PyTorch</span><span>Bayesian ML</span></div>
         </div>
         <div class="card">
           <h3>Game Development</h3>
           <p>Developed 2D and 3D games using Unity (C#) and Godot (GDScript).</p>
+          <div class="tags"><span>Unity</span><span>Godot</span></div>
         </div>
       </div>
     </section>
