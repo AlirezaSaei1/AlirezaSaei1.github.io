@@ -7,7 +7,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="toggle-container">
+    <input type="checkbox" id="dark-mode-toggle" hidden />
+    <label for="dark-mode-toggle" class="toggle">
+      <div class="knob"></div>
+    </label>
+  </div>
+
   <header>
+    <img src="Media/profile.jpg" alt="Profile Picture" class="profile-pic" />
     <h1>Alireza Dastmalchi Saei</h1>
     <p>Computer Engineering Student | AI Researcher | Mentor</p>
   </header>
@@ -22,14 +30,25 @@
 
     <section id="projects">
       <h2>Projects</h2>
-      <ul>
-        <li><strong>DeepFake Detection:</strong> Comparative study using XceptionNet and CLRNet.</li>
-        <li><strong>Parallel Conjugate Gradient:</strong> MPI implementation for large-scale matrix systems.</li>
-        <li><strong>Neural Processes for Classification:</strong> Investigated Infinite Mixture Neural Processes (IMNP) for classifying Alzheimer's disease progression on the TADPOLE dataset.</li>
-        <li><strong>Game Development:</strong> Developed 2D and 3D games using Unity (C#) and Godot (GDScript).</li>
-      </ul>
+      <div class="project-cards">
+        <div class="card">
+          <h3>DeepFake Detection</h3>
+          <p>Comparative study using XceptionNet and CLRNet.</p>
+        </div>
+        <div class="card">
+          <h3>Parallel Conjugate Gradient</h3>
+          <p>MPI implementation for large-scale matrix systems.</p>
+        </div>
+        <div class="card">
+          <h3>Neural Processes for Classification</h3>
+          <p>Investigated Neural Processes (NPs) for classifying Alzheimer's disease progression on the TADPOLE dataset.</p>
+        </div>
+        <div class="card">
+          <h3>Game Development</h3>
+          <p>Developed 2D and 3D games using Unity (C#) and Godot (GDScript).</p>
+        </div>
+      </div>
     </section>
-
 
     <section id="contact">
       <h2>Contact</h2>
