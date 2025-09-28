@@ -22,6 +22,7 @@
   <title>Alireza Dastmalchi Saei</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <div id="scrollProgress"></div>
@@ -47,21 +48,19 @@
   </ul>
 </nav>
 
-
-
   <main>
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h2>About Me</h2>
       <p>
         I'm a passionate computer engineering student with interests in AI, machine learning, and software (game) development. I enjoy building tools and solving real-world problems using code.
       </p>
     </section>
 
-    <section id="education">
+    <section id="education" data-aos="fade-up">
       <h2>Education</h2>
       <div class="education-container">
 
-        <div class="education-card">
+        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
           <div class="education-header">
             <img src="Media/bilkent_logo.png" alt="Bilkent University Logo" class="education-logo">
             <div class="education-info">
@@ -78,7 +77,7 @@
           </div>
         </div>
         
-        <div class="education-card">
+        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
           <div class="education-header">
             <img src="Media/UI_logo.png" alt="University of Isfahan Logo" class="education-logo">
             <div class="education-info">
@@ -95,7 +94,7 @@
           </div>
         </div>
         
-        <div class="education-card">
+        <div class="education-card" data-aos="fade-up" data-aos-delay="100">
           <div class="education-header">
             <img src="Media/sampad_logo.png" alt="Sampad Logo" class="education-logo">
             <div class="education-info">
@@ -113,7 +112,7 @@
       </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" data-aos="fade-up">
       <h2>Skills</h2>
       <div class="skills-grid">
         <div class="skill"><span>Python</span><div class="stars"><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span><span class="filled"></span></div></div>
@@ -124,25 +123,26 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="skills" data-aos="fade-up">
+    <section id="projects" >
       <h2>Projects</h2>
       <div class="project-cards">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h3>DeepFake Detection</h3>
           <p>Comparative study using XceptionNet and CLRNet.</p>
           <div class="tags"><span>Python</span><span>TensorFlow</span><span>CV</span></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h3>Parallel Conjugate Gradient</h3>
           <p>MPI implementation for large-scale matrix systems.</p>
           <div class="tags"><span>C</span><span>MPI</span><span>HPC</span></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h3>Neural Processes for Classification</h3>
           <p>Investigated IMNP for classifying Alzheimer's disease progression on the TADPOLE dataset.</p>
           <div class="tags"><span>PyTorch</span><span>Bayesian ML</span></div>
         </div>
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <h3>Game Development</h3>
           <p>Developed 2D and 3D games using Unity (C#) and Godot (GDScript).</p>
           <div class="tags"><span>Unity</span><span>Godot</span></div>
@@ -150,7 +150,8 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="skills" data-aos="fade-up">
+    <section id="contact" >
       <h2>Contact</h2>
       <div class="contact-links">
         <a href="mailto:saeialireza359@gmail.com"><i class="fas fa-envelope"></i> Email</a>
@@ -164,6 +165,13 @@
     <p>© 2025 Alireza Dastmalchi Saei. All rights reserved.</p>
   </footer>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
